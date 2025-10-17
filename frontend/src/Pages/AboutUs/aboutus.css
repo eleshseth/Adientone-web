@@ -1,0 +1,31 @@
+.aboutus-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(103, 194, 250, 0.1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.aboutus-container h1 {
+  color: #0091ff;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.aboutus-container h2 {
+  color: #53b83a;
+  font-size: 1.3rem;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+.aboutus-container p,
+.aboutus-container ul {
+  color: #222;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.aboutus-container ul {
+  padding-left: 20px;
+}
