@@ -11,7 +11,7 @@ import Permanent from './Pages/Permanent/Permanent';
 import Contingent from './Pages/Contingent/Contingent';
 import Contract from './Pages/Contract/Contract';
 import Payroll from './Pages/Payroll/Payroll';
-import RPO from './Pages/RPO/RPO';
+import RPO from './Pages/Rpo/RPO';
 import Manufacturing from './Pages/Manufacturing/Manufacturing';
 import LightIndustrial from './Pages/LightIndustrial/LightIndustrial';
 import Technology from './Pages/Technology/Technology';
