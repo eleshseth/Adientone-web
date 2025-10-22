@@ -34,7 +34,8 @@ import bannera from './banner.jpg';
 import usa from './usaflag.png';
 import canada from './canadaflag.png';
 import linkedin from './linkedin.png';
-
+import nmsdc from './nmsdc.webp';
+import minority from './minority.png';
 export const assets = {
   logo,
   banner: bannera, // Use the banner.jpg image
@@ -72,5 +73,7 @@ export const assets = {
   bannera,
   usa,
   canada,
-  linkedin
+  linkedin,
+  nmsdc,
+  minority
 };

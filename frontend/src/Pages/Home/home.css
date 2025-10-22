@@ -53,8 +53,7 @@
 /* Icon Row Section */
 .icon-row-section {
   width: 100%;
-  margin: 24px auto 0 auto;
-  padding: 0 16px 32px 16px;
+
   background: #67c2fa;
   border-radius: 18px;
   box-shadow: 0 2px 12px rgba(103, 194, 250, 0.08);

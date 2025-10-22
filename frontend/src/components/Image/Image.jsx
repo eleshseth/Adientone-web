@@ -5,9 +5,10 @@ const Image = ({ src, title, alt = '' }) => (
     style={{
       position: 'relative',
       display: 'inline-block',
-      width: '100%',
+      width: '200vh',
       overflow: 'hidden',
       borderRadius: '12px',
+      height: '75vh',
     }}>
     <img
       src={src}
@@ -24,7 +25,7 @@ const Image = ({ src, title, alt = '' }) => (
         boxShadow: '0 4px 16px rgba(103, 194, 250, 0.13)',
       }}
     />
-    <div
+    {/* <div
       style={{
         position: 'absolute',
         bottom: '12px',
@@ -40,7 +41,7 @@ const Image = ({ src, title, alt = '' }) => (
         boxShadow: '0 2px 8px rgba(83, 184, 58, 0.10)',
       }}>
       {title}
-    </div>
+    </div> */}
   </div>
 );
 
