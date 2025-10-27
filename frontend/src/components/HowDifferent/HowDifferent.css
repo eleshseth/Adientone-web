@@ -105,26 +105,26 @@
   .how-different {
     padding: 3rem 1rem;
   }
-  
+
   .different-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
   }
-  
+
   .different-image-container {
     transform: perspective(1000px) rotateY(0);
     margin-top: 2rem;
   }
-  
+
   .different-content h2 {
     font-size: 1.8rem;
   }
-  
+
   .different-content p {
     font-size: 1rem;
   }
-  
+
   .different-image {
     height: 300px;
   }
