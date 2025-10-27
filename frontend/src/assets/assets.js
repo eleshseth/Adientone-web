@@ -36,6 +36,23 @@ import canada from './canadaflag.png';
 import linkedin from './linkedin.png';
 import nmsdc from './nmsdc.webp';
 import minority from './minority.png';
+import automotive from './Automotive.png';
+import Banking from './banking.png';
+import hospital from './hospital.png';
+import lifee from './Life.png';
+import insurance from './Insurance.png';
+import semiconsuctor from './Semiconductor.png';
+import tele from './Tele.png';
+import goverment from './goverment.png';
+import energy from './Energy.png';
+import professional from './Professional.png';
+import retaila from './Retaila.png';
+import healthcare from './healthcare.png';
+import cloud from './cloud.mp4';
+import saving from './saving.webp';
+import logow from './logow.png';
+import diffrent from './diffrent.png';
+
 export const assets = {
   logo,
   banner: bannera, // Use the banner.jpg image
@@ -75,5 +92,20 @@ export const assets = {
   canada,
   linkedin,
   nmsdc,
-  minority
+  minority,
+  automotive,
+  Banking,
+  hospital,
+  lifee,
+  insurance,
+  semiconsuctor,
+  tele,
+  goverment,
+  retaila,
+  energy,  professional,
+  healthcare,
+  cloud,
+  saving,
+  logow,
+  diffrent,
 };

@@ -6,6 +6,7 @@ import Paragraph from '../../components/Paragraph/Paragraph.jsx';
 import Experience from '../../components/Experience/Experience.jsx';
 import Engagements from '../../components/Engagements/Engagements.jsx';
 import ServiceSection from '../../components/ServiceSection/ServiceSection.jsx';
+import Excellence from '../../components/Excellence/Excellence.jsx';
 
 const hospitalityRoles = [
   'Front Office Manager',
@@ -48,12 +49,11 @@ const Hospitality = () => (
       <h2>Manufacturing Roles</h2>
       <Points points={hospitalityRoles} />
       <Experience />
+      <Excellence />
       <ServiceSection />
       <Engagements />
     </div>
-    <Experience />
-    <Engagements />
-    <ServiceSection />
+    
   </div>
 );
 

@@ -30,6 +30,193 @@
   padding-left: 20px;
 }
 
+/* Common section styling with home page theme and animations */
+.aboutus-section,
+.vision-section,
+.mission-section,
+.why-choose-section,
+.certifications-section,
+.company-overview-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 36px 24px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  color: #1e293b;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(83, 184, 58, 0.08),
+    0 1.5px 8px rgba(30, 144, 255, 0.07);
+  font-family: 'Segoe UI', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  line-height: 1.8;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 0.8s ease forwards;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Staggered animation delays for each section */
+.aboutus-section {
+  animation-delay: 0.1s;
+}
+
+.company-overview-section {
+  animation-delay: 0.2s;
+}
+
+.vision-section {
+  animation-delay: 0.3s;
+}
+
+.mission-section {
+  animation-delay: 0.4s;
+}
+
+.why-choose-section {
+  animation-delay: 0.5s;
+}
+
+.certifications-section {
+  animation-delay: 0.6s;
+}
+
+/* Enhanced hover effects */
+.aboutus-section:hover,
+.vision-section:hover,
+.mission-section:hover,
+.why-choose-section:hover,
+.certifications-section:hover,
+.company-overview-section:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(83, 184, 58, 0.16),
+    0 4px 16px rgba(30, 144, 255, 0.12);
+}
+
+/* Animated background effect for sections */
+.aboutus-section::before,
+.vision-section::before,
+.mission-section::before,
+.why-choose-section::before,
+.certifications-section::before,
+.company-overview-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(103, 194, 250, 0.1),
+    transparent
+  );
+  transition: left 0.8s ease;
+  z-index: 0;
+}
+
+.aboutus-section:hover::before,
+.vision-section:hover::before,
+.mission-section:hover::before,
+.why-choose-section:hover::before,
+.certifications-section:hover::before,
+.company-overview-section:hover::before {
+  left: 100%;
+}
+
+/* Animated headings */
+h1,
+h2 {
+  color: #67c2fa;
+  margin-bottom: 16px;
+  letter-spacing: 0.6px;
+  width: 100%;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideInFromLeft 0.6s ease forwards;
+  animation-delay: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+/* Animated paragraphs and content */
+p {
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  width: 100%;
+  opacity: 0;
+  animation: fadeInContent 0.8s ease forwards;
+  animation-delay: 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  opacity: 0;
+  animation: fadeInContent 0.8s ease forwards;
+  animation-delay: 0.6s;
+  position: relative;
+  z-index: 1;
+}
+
+li {
+  margin-bottom: 12px;
+  color: #222;
+  font-weight: 500;
+  opacity: 0;
+  animation: listItemSlide 0.5s ease forwards;
+  animation-delay: calc(0.7s + var(--i) * 0.1s);
+  transform: translateX(-20px);
+}
+
+/* Set animation delays for list items */
+li:nth-child(1) {
+  --i: 0;
+}
+li:nth-child(2) {
+  --i: 1;
+}
+li:nth-child(3) {
+  --i: 2;
+}
+li:nth-child(4) {
+  --i: 3;
+}
+li:nth-child(5) {
+  --i: 4;
+}
+
+/* Enhanced background logo animation */
+.aboutus-background-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: auto;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  animation: logoFadeIn 2s ease forwards, logoFloat 6s ease-in-out infinite;
+  animation-delay: 1s, 3s;
+}
+
+/* Certifications with home page styling */
 .certifications-container {
   display: flex;
   justify-content: center;
@@ -37,65 +224,94 @@
   margin: 40px 0;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .certification-item {
+  flex: 1 1 450px;
+  max-width: 500px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 20px;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 30px;
-  background: #f8fafc;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(103, 194, 250, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  will-change: transform;
+  box-shadow: 0 4px 24px rgba(83, 184, 58, 0.08),
+    0 1.5px 8px rgba(30, 144, 255, 0.07);
   opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
-  flex: 1;
-  min-width: 400px;
-  max-width: 500px;
+  transform: scale(0.9) translateY(30px);
+  animation: certificationSlideIn 0.8s ease forwards;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.certification-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(67, 194, 250, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.certification-item:hover::before {
+  left: 100%;
 }
 
 .certification-item:nth-child(1) {
-  animation-delay: 0.2s;
+  animation-delay: 0.8s;
 }
 
 .certification-item:nth-child(2) {
-  animation-delay: 0.4s;
+  animation-delay: 1s;
 }
 
 .certification-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(103, 194, 250, 0.3);
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 16px 45px rgba(67, 194, 250, 0.25),
+    0 8px 20px rgba(83, 184, 58, 0.15);
+  border-color: rgba(67, 194, 250, 0.2);
 }
 
 .certification-logo {
-  width: 280px;
+  width: 100%;
+  max-width: 320px;
   height: 180px;
   object-fit: contain;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
 }
 
 .certification-item:hover .certification-logo {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  filter: drop-shadow(0 8px 20px rgba(67, 194, 250, 0.2));
 }
 
 .certification-item h4 {
-  margin: 0;
-  font-size: 1.3rem;
-  font-weight: 600;
   color: #1e293b;
+  font-size: 1.15rem;
+  margin: 0;
   text-align: center;
-  font-family: 'Segoe UI', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
 }
 
+/* New Animation Keyframes */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -103,23 +319,357 @@
   }
 }
 
-@media (max-width: 768px) {
-  .certifications-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 0 20px;
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.92;
+  }
+}
+
+@keyframes listItemSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 0.9;
+    transform: translateX(0);
+  }
+}
+
+@keyframes logoFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 0.35;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes logoFloat {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -52%) rotate(2deg) scale(1.02);
+  }
+}
+
+@keyframes certificationSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Mobile responsiveness - consistent widths */
+@media (max-width: 900px) {
+  .aboutus-section,
+  .vision-section,
+  .mission-section,
+  .why-choose-section,
+  .certifications-section,
+  .company-overview-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 16px;
+    margin: 16px 10px;
   }
 
   .certification-item {
-    width: 100%;
-    max-width: 600px;
-    min-width: auto;
-    padding: 30px 20px;
+    flex: 1 1 100%;
+    max-width: 720px;
+    padding: 20px;
   }
 
   .certification-logo {
-    width: 250px;
-    height: 160px;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutus-section,
+  .vision-section,
+  .mission-section,
+  .why-choose-section,
+  .certifications-section,
+  .company-overview-section {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 10px 0;
+    padding: 20px 15px;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Align the vision section to the left side of the screen */
+.vision-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto 20px 50px; /* Move to left by setting left margin smaller */
+  padding: 36px 24px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  color: #1e293b;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(83, 184, 58, 0.08),
+    0 1.5px 8px rgba(30, 144, 255, 0.07);
+  font-family: 'Segoe UI', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  line-height: 1.8;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.mission-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 50px 20px auto; /* Move to right by setting right margin smaller */
+  padding: 36px 24px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  color: #1e293b;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(83, 184, 58, 0.08),
+    0 1.5px 8px rgba(30, 144, 255, 0.07);
+  font-family: 'Segoe UI', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  line-height: 1.8;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+/* Company overview section styling */
+.company-overview-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 50px 20px auto; /* Move to right by setting right margin smaller */
+  padding: 36px 24px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  color: #1e293b;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(83, 184, 58, 0.08),
+    0 1.5px 8px rgba(30, 144, 255, 0.07);
+  font-family: 'Segoe UI', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  line-height: 1.8;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.company-overview-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(83, 184, 58, 0.12),
+    0 2px 12px rgba(30, 144, 255, 0.1);
+}
+
+/* Align the why-choose-section to the left side of the screen */
+.why-choose-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto 20px 50px; /* Move to left by setting left margin smaller */
+  padding: 36px 24px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  color: #1e293b;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(83, 184, 58, 0.08),
+    0 1.5px 8px rgba(30, 144, 255, 0.07);
+  font-family: 'Segoe UI', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  line-height: 1.8;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.certifications-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 50px 20px auto; /* Move to right by setting right margin smaller */
+  padding: 36px 24px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  color: #1e293b;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(83, 184, 58, 0.08),
+    0 1.5px 8px rgba(30, 144, 255, 0.07);
+  font-family: 'Segoe UI', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  line-height: 1.8;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.aboutus-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 36px 24px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  color: #1e293b;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(83, 184, 58, 0.08),
+    0 1.5px 8px rgba(30, 144, 255, 0.07);
+  font-family: 'Segoe UI', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  line-height: 1.8;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.aboutus-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutus-logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.aboutus-header h1 {
+  margin: 0;
+  color: #67c2fa;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+.aboutus-content {
+  position: relative;
+  z-index: 1;
+}
+
+.aboutus-background-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: auto;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  animation: logoFadeIn 2s ease forwards, logoFloat 6s ease-in-out infinite;
+  animation-delay: 1s, 3s;
+}
+
+.aboutus-content p {
+  position: relative;
+  z-index: 2;
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  width: 100%;
+  opacity: 0.92;
+}
+
+@media (max-width: 768px) {
+  .aboutus-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .aboutus-logo {
+    width: 100px;
+  }
+
+  .aboutus-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .aboutus-background-logo {
+    width: 350px;
+  }
+}
+
+/* New Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.92;
+  }
+}
+
+@keyframes listItemSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 0.9;
+    transform: translateX(0);
+  }
+}
+
+@keyframes logoFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 0.35;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes logoFloat {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -52%) rotate(2deg) scale(1.02);
+  }
+}
+
+@keyframes certificationSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
   }
 }

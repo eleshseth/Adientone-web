@@ -1,0 +1,137 @@
+.how-different {
+  width: 100%;
+  background: linear-gradient(135deg, #ffffff 0%, #e8e1e1 100%);
+  padding: 4rem 1rem;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  box-shadow: #000000;
+}
+
+.different-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.different-content {
+  color: white;
+  text-align: left;
+}
+
+.different-logo {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 2px 8px rgba(83, 184, 58, 0.2));
+}
+
+.different-content h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.different-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  color: #53b83a;
+}
+
+.different-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: #000000;
+  background: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.different-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.different-image-container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateY(-15deg);
+  transition: transform 0.5s ease;
+  max-width: 100%;
+}
+
+.different-image-container:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.different-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.different-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(26, 26, 26, 0.3) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.different-image-container:hover .different-overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .how-different {
+    padding: 3rem 1rem;
+  }
+  
+  .different-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .different-image-container {
+    transform: perspective(1000px) rotateY(0);
+    margin-top: 2rem;
+  }
+  
+  .different-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .different-content p {
+    font-size: 1rem;
+  }
+  
+  .different-image {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .how-different {
+    padding: 2rem 1rem;
+  }
+}

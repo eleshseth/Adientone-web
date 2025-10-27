@@ -1,5 +1,5 @@
 .contactus-container {
-  max-width: 900px;
+  width: 80%;
   margin: 48px auto 32px auto;
   padding: 0;
   background: #fff;
@@ -8,8 +8,14 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   gap: 0;
-  flex-direction: row;
+  flex-direction: column; /* Changed to column to stack form and map */
   overflow: hidden;
+}
+
+.contactus-content {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
 }
 
 .contactus-left,
@@ -183,39 +189,187 @@
   cursor: not-allowed;
 }
 
-@media (max-width: 900px) {
-  .contactus-container {
-    flex-direction: column;
-    border-radius: 14px;
+.map-section {
+  margin-top: 0;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 0 0 18px 18px; /* Only bottom corners rounded */
+  padding: 2.5rem;
+  box-shadow: 0 4px 24px rgba(83, 184, 58, 0.08),
+    0 1.5px 8px rgba(30, 144, 255, 0.07);
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.8s;
+  border-top: 1px solid rgba(103, 194, 250, 0.1);
+}
+
+.map-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #67c2fa;
+  margin-bottom: 2rem;
+}
+
+.map-wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.map-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.google-map {
+  filter: grayscale(0.2);
+  transition: filter 0.3s ease;
+}
+
+.google-map:hover {
+  filter: grayscale(0);
+}
+
+.map-address {
+  background: rgba(103, 194, 250, 0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid rgba(103, 194, 250, 0.2);
+}
+
+.map-address h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #67c2fa;
+  margin: 0 0 0.5rem 0;
+}
+
+.map-address p {
+  color: #64748b;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.location-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.location-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #67c2fa;
+  margin-bottom: 1rem;
+}
+
+.location-flags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.flag-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.flag-item:hover {
+  transform: translateY(-5px);
+}
+
+.flag-icon {
+  width: 50px;
+  height: 35px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.flag-item:hover .flag-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(103, 194, 250, 0.3);
+}
+
+.flag-label {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .map-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+
+  .map-title {
+    font-size: 1.5rem;
+  }
+
+  .google-map {
+    height: 300px;
+  }
+
+  .location-flags {
+    gap: 2rem;
+  }
+
+  .flag-icon {
+    width: 40px;
+    height: 28px;
+  }
+
+  .flag-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .contactus-content {
+    flex-direction: column;
+  }
+
   .contactus-left,
   .contactus-right {
     border-radius: 0;
     padding: 28px 16px 18px 16px;
   }
+
   .contactus-left {
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
   }
+
   .contactus-right {
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
+    border-radius: 0;
   }
-  .contactus-left h1 {
-    text-align: center;
+
+  .map-section {
+    border-radius: 0 0 14px 14px;
   }
-  .contactus-right h2 {
-    text-align: center;
-  }
+
+  /* ...existing code... */
 }
 
-@media (max-width: 768px) {
-  .name-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
+/* ...existing code... */

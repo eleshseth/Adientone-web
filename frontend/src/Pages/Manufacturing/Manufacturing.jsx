@@ -6,6 +6,7 @@ import Points from '../../components/Points/Points'
 import Experience from '../../components/Experience/Experience'
 import ServiceSection from '../../components/ServiceSection/ServiceSection'
 import Engagements from '../../components/Engagements/Engagements'
+import Excellence from '../../components/Excellence/Excellence'
 const manufacturingRoles = [
   'Industrial Engineer',
   'Bio/Chemical',
@@ -14,11 +15,9 @@ const manufacturingRoles = [
   'Maintenance Technician',
   'Supply Chain Specialist',
   'Mechanical Engineer',
-  'Software Engineer',
   'Manufacturing Technician',
   'Environmental Advisor',
   'Market Research Analyst',
-  'Learning & Development Manager',
   'Assembly Line Workers',
   'Machine Operator',
   'Quality Control Inspector',
@@ -44,6 +43,7 @@ const Manufacturing = () => {
         <h2>Manufacturing Roles</h2>
         <Points points={manufacturingRoles} />
         <Experience />
+        <Excellence />
         <ServiceSection/>
         <Engagements/>
       </div>

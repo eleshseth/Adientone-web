@@ -7,7 +7,7 @@ const Image = ({ src, title, alt = '' }) => (
       display: 'inline-block',
       width: '200vh',
       overflow: 'hidden',
-      borderRadius: '12px',
+     
       height: '75vh',
     }}>
     <img
@@ -21,7 +21,7 @@ const Image = ({ src, title, alt = '' }) => (
         display: 'block',
         marginTop: '-10%',
         marginBottom: '-20%',
-        borderRadius: '12px',
+       
         boxShadow: '0 4px 16px rgba(103, 194, 250, 0.13)',
       }}
     />

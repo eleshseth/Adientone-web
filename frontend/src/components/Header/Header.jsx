@@ -32,6 +32,9 @@ const Header = () => {
         <Link to='/' onClick={handleNavClick}>
           Home
         </Link>
+        <Link to='/about' onClick={handleNavClick}>
+          About
+        </Link>
         <div className='navlink-dropdown'>
           <a href='#services' onClick={handleNavClick}>
             Services
@@ -97,19 +100,7 @@ const Header = () => {
         <Link to='/career' onClick={handleNavClick}>
           Career
         </Link>
-        <div className='navlink-dropdown'>
-          <Link to='/about' onClick={handleNavClick}>
-            About
-          </Link>
-          {/* <div className='dropdown-content'>
-            <a href='#team' onClick={handleNavClick}>
-              Our Team
-            </a>
-            <a href='#mission' onClick={handleNavClick}>
-              Mission
-            </a>
-          </div> */}
-        </div>
+       
         <div className='navlink-dropdown'>
           <Link to='/contact' onClick={handleNavClick}>
             Contact
