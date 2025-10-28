@@ -38,7 +38,7 @@ const FinanceService = () => (
       }
     />
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <h2>Manufacturing Roles</h2>
+      <h2>Finance Services Roles</h2>
       <Points
         title='Corporate & Business Services Roles'
         points={corporateRolesPoints}

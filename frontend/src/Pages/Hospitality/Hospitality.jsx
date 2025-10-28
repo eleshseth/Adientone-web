@@ -7,6 +7,7 @@ import Experience from '../../components/Experience/Experience.jsx';
 import Engagements from '../../components/Engagements/Engagements.jsx';
 import ServiceSection from '../../components/ServiceSection/ServiceSection.jsx';
 import Excellence from '../../components/Excellence/Excellence.jsx';
+import Hosp from '../../components/Hosp/Hosp.jsx';
 
 const hospitalityRoles = [
   'Front Office Manager',
@@ -46,14 +47,14 @@ const Hospitality = () => (
       ]}
     />
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <h2>Manufacturing Roles</h2>
-      <Points points={hospitalityRoles} />
+      {/* <h2>Hospitality Roles</h2>
+      <Points points={hospitalityRoles} /> */}
       <Experience />
+    <Hosp/>
       <Excellence />
       <ServiceSection />
       <Engagements />
     </div>
-    
   </div>
 );
 

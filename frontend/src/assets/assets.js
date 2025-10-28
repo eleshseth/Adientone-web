@@ -52,6 +52,9 @@ import cloud from './cloud.mp4';
 import saving from './saving.webp';
 import logow from './logow.png';
 import diffrent from './diffrent.png';
+import hosp from './hosp.png';
+import mask from './mask.avif';
+import staff from './staff.avif';
 
 export const assets = {
   logo,
@@ -108,4 +111,7 @@ export const assets = {
   saving,
   logow,
   diffrent,
+  hosp,
+  mask,
+  staff
 };

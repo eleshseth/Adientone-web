@@ -42,11 +42,11 @@ const Pharmaceutical = () => (
       description={[
         'The Pharmaceutical and Life Sciences industries operate with significant operational and regulatory challenges, have the constant demand to release new and innovative products, and face increasing pressure to demonstrate profitability. At the same time, patent protection is eroding, consumers are seeking lower-cost alternatives, and competition is fierce.',
         'To succeed today, pharmaceutical and life sciences companies need to overcome industry challenges, create product differentiation, and drive sustainable growth. We help pharmaceutical and life sciences companies acquire and manage the talent they need to meet the challenges of a changing industry and gain a competitive advantage.',
-        'Altislink offers Pharmaceutical and Life Sciences clients an integrated approach – aligning talent strategy with business strategy – providing enterprise-wide talent on-demand that can support evolving business needs.',
+        'AdientOne offers Pharmaceutical and Life Sciences clients an integrated approach – aligning talent strategy with business strategy – providing enterprise-wide talent on-demand that can support evolving business needs.',
       ]}
     />
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <h2>Manufacturing Roles</h2>
+      <h2>Pharmaceutical Roles</h2>
       <Points
         title='Pharmaceutical & Life Sciences Roles'
         points={pharmaPoints}
@@ -56,7 +56,6 @@ const Pharmaceutical = () => (
       <ServiceSection />
       <Engagements />
     </div>
-   
   </div>
 );
 

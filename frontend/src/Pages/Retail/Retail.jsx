@@ -45,7 +45,7 @@ const Retail = () => (
       ]}
     />
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <h2>Manufacturing Roles</h2>
+      <h2>Retail Roles</h2>
       <Points points={ecommercePoints} />
       <Experience />
       <Excellence />

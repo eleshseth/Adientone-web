@@ -34,7 +34,7 @@ const Footer = () => {
             <h4>Company</h4>
             <ul>
               <li>
-                <a href='#'>About</a>
+                <a href='/about'>About</a>
               </li>
             </ul>
           </div>
@@ -42,22 +42,22 @@ const Footer = () => {
             <h4>Services</h4>
             <ul>
               <li>
-                <a href='#'>Executive Search</a>
+                <a href='/executive'>Executive Search</a>
               </li>
               <li>
-                <a href='#'>Permanent Hiring</a>
+                <a href='permanent'>Permanent Hiring</a>
               </li>
               <li>
-                <a href='#'>Contingent Staffing</a>
+                <a href='contingent'>Contingent Staffing</a>
               </li>
               <li>
-                <a href='#'>Contract to Hire</a>
+                <a href='/contract'>Contract to Hire</a>
               </li>
               <li>
-                <a href='#'>Payroll Solutions</a>
+                <a href='/payroll'>Payroll Solutions</a>
               </li>
               <li>
-                <a href='#'>RPO</a>
+                <a href='/rpo'>RPO</a>
               </li>
             </ul>
           </div>
@@ -100,7 +100,7 @@ const Footer = () => {
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href='#'>Get in Touch</a>
+                <a href='/contact'>Get in Touch</a>
               </li>
             </ul>
           </div>
@@ -118,7 +118,9 @@ const Footer = () => {
             </div>
             <div className='linkedin-section'>
               <p className='linkedin-tagline'>Connect with us on LinkedIn</p>
-              <a href='#' aria-label='LinkedIn'>
+              <a
+                href='https://www.linkedin.com/company/adientone/?viewAsMember=true'
+                aria-label='LinkedIn'>
                 <img
                   src={assets.linkedin}
                   alt='LinkedIn'

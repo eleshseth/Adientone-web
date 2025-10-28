@@ -8,7 +8,7 @@
     box-sizing: border-box;
     overflow: hidden;
   }
-  
+
   .icon-row {
     width: 100%;
     max-width: 100%;
@@ -17,13 +17,13 @@
     gap: 8px;
     justify-content: center;
   }
-  
+
   .icon-item {
     min-width: 60px;
     max-width: 80px;
     box-sizing: border-box;
   }
-  
+
   .what-we-do-section {
     margin: 12px 0;
     padding: 0 10px 12px 10px;
@@ -32,7 +32,7 @@
     box-sizing: border-box;
     overflow: hidden;
   }
-  
+
   .what-we-do-cards {
     flex-direction: column;
     gap: 10px;
@@ -41,7 +41,7 @@
     max-width: 100%;
     box-sizing: border-box;
   }
-  
+
   .what-we-do-card {
     width: calc(100% - 20px);
     max-width: 350px;
@@ -50,26 +50,26 @@
     padding: 16px 12px;
     box-sizing: border-box;
   }
-  
+
   .how-different-section {
     padding: 20px 10px;
     margin: 18px 0;
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   .savings {
     padding: 2rem 10px;
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   .saving-grid {
     padding: 0 10px;
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   .excellence-section {
     padding: 3rem 10px;
     width: 100%;
@@ -82,30 +82,30 @@
   * {
     box-sizing: border-box;
   }
-  
+
   body {
     overflow-x: hidden;
   }
-  
+
   .what-we-do-card {
     width: calc(100% - 10px);
     margin: 0 5px 10px 5px;
     padding: 12px 8px;
   }
-  
+
   .icon-row-section {
     padding: 15px 5px;
   }
-  
+
   .how-different-section {
     padding: 15px 5px;
     margin: 15px 0;
   }
-  
+
   .savings {
     padding: 1.5rem 5px;
   }
-  
+
   .excellence-section {
     padding: 2rem 5px;
   }
@@ -113,17 +113,18 @@
 
 /* Ensure no horizontal overflow */
 @media (max-width: 768px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     width: 100%;
   }
-  
+
   .home-video-container {
     width: 100%;
     margin: 0;
     padding: 0;
   }
-  
+
   .home-banner-image {
     width: 100%;
     max-width: 100%;
@@ -710,7 +711,7 @@
 .saving-button {
   padding: 1rem 2rem;
   font-size: 1.1rem;
-  color:#67c2fa;
+  color: #67c2fa;
   background: white;
   border: none;
   border-radius: 50px;
@@ -719,7 +720,7 @@
   font-weight: 600;
   background: transparent;
   border: 2px solid #67c2fa;
-  box-shadow: 0 8px 25px rgba(103, 194, 250, 0.3);;
+  box-shadow: 0 8px 25px rgba(103, 194, 250, 0.3);
 }
 .saving-button:hover {
   transform: translateY(-3px) scale(1.05);

@@ -6,6 +6,7 @@ import Experience from '../../components/Experience/Experience.jsx';
 import Engagements from '../../components/Engagements/Engagements.jsx';
 import ServiceSection from '../../components/ServiceSection/ServiceSection.jsx';
 import Excellence from '../../components/Excellence/Excellence.jsx';
+import HowDifferent from '../../components/HowDifferent/HowDifferent.jsx';
 
 const Contract = () => {
   return (
@@ -24,6 +25,18 @@ const Contract = () => {
       <Excellence />
       <Engagements />
       <ServiceSection />
+      <HowDifferent />
+      <div className='video-section'>
+        <video className='background-video' autoPlay loop muted>
+          <source src={assets.cloud} type='video/mp4' />
+          Your browser does not support the video tag.
+        </video>
+        <div className='video-content'>
+          <h2>Transform Your Workforce</h2>
+          <p>Partner with us for innovative staffing solutions</p>
+          {/* <button className='video-cta'>Learn More</button> */}
+        </div>
+      </div>
     </div>
   );
 };

@@ -40,7 +40,7 @@ const PublicSector = () => (
       ]}
     />
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <h2>Manufacturing Roles</h2>
+      <h2>Public Sector Roles</h2>
       <Points
         title='Public Sector & Professional Services Roles'
         points={publicSectorPoints}
@@ -50,7 +50,6 @@ const PublicSector = () => (
       <ServiceSection />
       <Engagements />
     </div>
-    
   </div>
 );
 

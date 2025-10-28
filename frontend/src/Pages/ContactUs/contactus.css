@@ -163,6 +163,7 @@
 
 .name-row {
   display: flex;
+  flex-direction: column;
   gap: 15px;
   margin-bottom: 15px;
 }
@@ -236,7 +237,7 @@
   padding: 1.5rem;
   border-radius: 15px;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   border: 2px solid rgba(103, 194, 250, 0.2);
 }
 

@@ -49,14 +49,13 @@ const Telecommunication = () => (
       ]}
     />
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      <h2>Manufacturing Roles</h2>
+      <h2>Telecommunications Roles</h2>
       <Points points={telecommunicationRoles} />
       <Experience />
       <Excellence />
       <ServiceSection />
       <Engagements />
     </div>
-    
   </div>
 );
 

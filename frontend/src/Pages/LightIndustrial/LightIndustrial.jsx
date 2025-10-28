@@ -29,14 +29,13 @@ const LightIndustrial = () => (
       ]}
     />
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      
+      <h2>Light Industrial Roles</h2>
       <Points title='Production' points={points} />
       <Experience />
       <Excellence />
       <ServiceSection />
       <Engagements />
     </div>
-  
   </div>
 );
 

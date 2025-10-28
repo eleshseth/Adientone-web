@@ -8,11 +8,11 @@ const AboutUs = () => (
       <div className='aboutus-section'>
         <h1>About AdientOne</h1>
         <div className='aboutus-content'>
-          <img
+          {/* <img
             src={assets.logo}
             alt='AdientOne Logo'
             className='aboutus-background-logo'
-          />
+          /> */}
           <p>
             Our Industry Practice Groups Are Guided By Professionals Who Have
             In-Depth Knowledge And Experience Across A Range Of Sectors. Our

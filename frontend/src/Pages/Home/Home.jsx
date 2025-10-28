@@ -37,14 +37,14 @@ const whatWeDoData = [
     isSvg: true,
   },
   {
-    title: 'How We Are Different',
+    title: 'Payroll Solutions',
     desc: 'There is no one-size-fits-all approach to recruitment, there must be a process tailored to the type of business and to...',
     icon: assets.laptop,
     color: '#19a483',
     isSvg: true,
   },
   {
-    title: 'Industries',
+    title: 'Rpo',
     desc: 'From start-ups to Fortune500 clients, we are staffing partner for a broad array of industries through our specialized service teams comprised...',
     icon: assets.talk,
     color: '#53b83a',
@@ -84,10 +84,60 @@ const Home = () => {
             style={{ transition: 'opacity 0.5s ease-in-out' }}
           />
         </div>
-        <div className='home-logo-overlay'>
+        {/* <div className='home-logo-overlay'>
           <img src={assets.logo} alt='Logo' className='home-logo-img' />
-        </div>
+        </div> */}
       </div>
+
+      <section className='what-we-do-section'>
+        <h2 className='what-we-do-heading'>What We Do</h2>
+        <div className='what-we-do-cards'>
+          {whatWeDoData.map((item, idx) => (
+            <div
+              className='what-we-do-card'
+              key={item.title}
+              style={{
+                borderColor: item.color,
+                animationDelay: `${idx * 0.12}s`,
+              }}
+              onClick={() => {
+                if (item.title === 'Executive Search') {
+                  navigate('/executive');
+                }
+                if (item.title === 'Permanent Hiring') {
+                  navigate('/permanent');
+                }
+                if (item.title === 'Contingent Staffing') {
+                  navigate('/contingent');
+                }
+                if (item.title === 'Contract to Hire') {
+                  navigate('/contract');
+                }
+                if (item.title === 'Payroll Solutions') {
+                  navigate('/payroll');
+                }
+                if (item.title === 'Rpo') {
+                  navigate('/rpo');
+                }
+              }}>
+              <div className='what-we-do-icon' style={{ color: item.color }}>
+                {item.isSvg ? (
+                  <img
+                    src={item.icon}
+                    alt={item.title + ' icon'}
+                    style={{ height: '8.8rem', width: '8.8' }}
+                  />
+                ) : (
+                  item.icon
+                )}
+              </div>
+              <h3 className='what-we-do-title'>{item.title}</h3>
+              <p className='what-we-do-desc'>{item.desc}</p>
+              <button className='what-we-do-readmore'>Read More</button>
+            </div>
+          ))}
+        </div>
+      </section>
       <Experience />
       <section className='icon-row-section'>
         <h2 className='services-heading'>Services</h2>
@@ -136,46 +186,6 @@ const Home = () => {
             <img src={assets.support} alt='Logo' className='icon-img' />
             <span className='icon-label'>Ongoing Support </span>
           </div>
-        </div>
-      </section>
-      <section className='what-we-do-section'>
-        <h2 className='what-we-do-heading'>What We Do</h2>
-        <div className='what-we-do-cards'>
-          {whatWeDoData.map((item, idx) => (
-            <div
-              className='what-we-do-card'
-              key={item.title}
-              style={{
-                borderColor: item.color,
-                animationDelay: `${idx * 0.12}s`,
-              }}
-              onClick={() => {
-                if (item.title === 'Permanent Hiring') {
-                  navigate('/permanent');
-                }
-                if (item.title === 'Contingent Staffing') {
-                  navigate('/contingent');
-                }
-                if (item.title === 'Contract to Hire') {
-                  navigate('/contract');
-                }
-              }}>
-              <div className='what-we-do-icon' style={{ color: item.color }}>
-                {item.isSvg ? (
-                  <img
-                    src={item.icon}
-                    alt={item.title + ' icon'}
-                    style={{ height: '8.8rem', width: '8.8' }}
-                  />
-                ) : (
-                  item.icon
-                )}
-              </div>
-              <h3 className='what-we-do-title'>{item.title}</h3>
-              <p className='what-we-do-desc'>{item.desc}</p>
-              <button className='what-we-do-readmore'>Read More</button>
-            </div>
-          ))}
         </div>
       </section>
       <div className='savings'>

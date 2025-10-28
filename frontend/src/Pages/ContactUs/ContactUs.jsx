@@ -160,7 +160,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className='map-section'>
+      {/* <div className='map-section'>
         <h2 className='map-title'>Find Us Here</h2>
         <div className='map-wrapper'>
           <iframe
@@ -174,28 +174,30 @@ const ContactUs = () => {
             title='AdientOne Location - Mukilteo, WA'
             className='google-map'></iframe>
         </div>
-        <div className='map-address'>
-          <h3>Our Office</h3>
-          <p>
-            12138 Mukilteo Speedway,
-            <br />
-            Suite: M 203,
-            <br />
-            Mukilteo, WA 98275
-          </p>
-        </div>
+        
 
-        <div className='location-section'>
-          <h3 className='location-title'>Our Locations</h3>
-          <div className='location-flags'>
-            <div className='flag-item'>
-              <img src={assets.usa} alt='USA' className='flag-icon' />
-              <span className='flag-label'>USA</span>
-            </div>
-            <div className='flag-item'>
-              <img src={assets.canada} alt='Canada' className='flag-icon' />
-              <span className='flag-label'>Canada</span>
-            </div>
+      </div> */}
+      <div className='map-address'>
+        <h3>Our Office</h3>
+        <p>
+          12138 Mukilteo Speedway,
+          <br />
+          Suite: M 203,
+          <br />
+          Mukilteo, WA 98275
+        </p>
+      </div>
+
+      <div className='location-section'>
+        <h3 className='location-title'>Our Locations</h3>
+        <div className='location-flags'>
+          <div className='flag-item'>
+            <img src={assets.usa} alt='USA' className='flag-icon' />
+            <span className='flag-label'>USA</span>
+          </div>
+          <div className='flag-item'>
+            <img src={assets.canada} alt='Canada' className='flag-icon' />
+            <span className='flag-label'>Canada</span>
           </div>
         </div>
       </div>
