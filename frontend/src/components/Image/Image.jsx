@@ -4,24 +4,25 @@ const Image = ({ src, title, alt = '' }) => (
   <div
     style={{
       position: 'relative',
-      display: 'inline-block',
-      width: '200vh',
+      display: 'block',
+      width: '100%',
+      maxWidth: '100vw',
       overflow: 'hidden',
-     
       height: '75vh',
+      boxSizing: 'border-box',
     }}>
     <img
       src={src}
       alt={alt || title}
       style={{
         width: '100%',
+        maxWidth: '100%',
         height: '140%',
         objectFit: 'cover',
         objectPosition: 'center',
         display: 'block',
         marginTop: '-10%',
         marginBottom: '-20%',
-       
         boxShadow: '0 4px 16px rgba(103, 194, 250, 0.13)',
       }}
     />

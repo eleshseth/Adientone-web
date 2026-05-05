@@ -43,7 +43,17 @@ const Executive = () => (
     />
     {/* <Points points={manufacturingRoles} /> */}
     <Experience />
-
+    <div className='video-section'>
+      <video className='background-video' autoPlay loop muted>
+        <source src={assets.cloud} type='video/mp4' />
+        Your browser does not support the video tag.
+      </video>
+      <div className='video-content'>
+        <h2>Transform Your Workforce</h2>
+        <p>Partner with us for innovative staffing solutions</p>
+        {/* <button className='video-cta'>Learn More</button> */}
+      </div>
+    </div>
     <Excellence />
     <Engagements />
     <ServiceSection />

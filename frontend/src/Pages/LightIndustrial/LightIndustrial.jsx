@@ -15,6 +15,14 @@ const points = [
   'Assemblers',
   'Shipping And Receiving Associates',
   'And More…',
+  'Electrician',
+  'Rig Mechanic',
+  'Welder',
+  'Tool Pusher',
+  'Drilling Technician',
+  'Warehouse worker',
+  'Fabrication Associate',
+  'Logistic Coordinator',
 ];
 const LightIndustrial = () => (
   <div className='lightindustrial-container'>

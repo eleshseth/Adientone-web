@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './career.css';
 import { assets } from '../../assets/assets';
 
 const Career = () => {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://jobsapi.ceipal.com/APISource/widget.js";
+    script.type = "text/javascript";
+    script.async = true;
+
+    // Add required attributes
+    script.setAttribute(
+      "data-ceipal-api-key",
+      "T1BQeDZXRHd3dGRQTWpLK2JTdnpXQT09"
+    );
+    script.setAttribute(
+      "data-ceipal-career-portal-id",
+      "Z3RkUkt2OXZJVld2MjFpOVRSTXoxZz09"
+    );
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script); // cleanup
+    };
+  }, []);
+
   const benefits = [
     {
       icon: '📈',
@@ -53,6 +77,7 @@ const Career = () => {
 
   return (
     <div className='career-container'>
+      
       {/* Hero Section */}
       <section className='career-hero'>
         <div className='hero-background'>
@@ -72,83 +97,71 @@ const Career = () => {
             <button className='cta-button'>Explore Opportunities</button>
           </div>
         </div>
-        <div className='floating-elements'>
-          <div className='float-element element-1'></div>
-          <div className='float-element element-2'></div>
-          <div className='float-element element-3'></div>
-        </div>
       </section>
 
-      {/* Why Work With Us Section */}
+      {/* Why Work With Us */}
       <section className='why-work-section'>
         <div className='section-container'>
           <h2 className='section-title'>Why Work With Us?</h2>
           <div className='benefits-grid'>
             {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className='benefit-card'
-                style={{ '--delay': `${index * 0.2}s` }}>
+              <div key={index} className='benefit-card'>
                 <div className='benefit-icon'>{benefit.icon}</div>
                 <h3 className='benefit-title'>{benefit.title}</h3>
                 <p className='benefit-description'>{benefit.description}</p>
-                <div className='card-glow'></div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Current Openings Section */}
+      {/* CEIPAL JOB WIDGET SECTION (🔥 MAIN INTEGRATION) */}
       <section className='openings-section'>
         <div className='section-container'>
           <h2 className='section-title'>Current Openings</h2>
+
+          {/* This div is REQUIRED for widget */}
+          <div id="example-widget-container"></div>
+        </div>
+      </section>
+
+      {/* Optional Static Openings (can remove if widget replaces it) */}
+      <section className='openings-section'>
+        <div className='section-container'>
+          <h2 className='section-title'>Other Opportunities</h2>
           <div className='openings-grid'>
             {openings.map((opening, index) => (
-              <div
-                key={index}
-                className='opening-card'
-                style={{ '--delay': `${index * 0.15}s` }}>
+              <div key={index} className='opening-card'>
                 <div className='opening-header'>
                   <h3 className='opening-title'>{opening.title}</h3>
                   <span className='opening-type'>{opening.type}</span>
                 </div>
                 <div className='opening-details'>
                   <div className='detail-item'>
-                    <span className='detail-icon'>📍</span>
-                    <span className='detail-text'>{opening.location}</span>
+                    📍 {opening.location}
                   </div>
                   <div className='detail-item'>
-                    <span className='detail-icon'>💼</span>
-                    <span className='detail-text'>
-                      Experience: {opening.experience}
-                    </span>
+                    💼 {opening.experience}
                   </div>
                 </div>
                 <button className='apply-button'>Apply Now</button>
-                <div className='opening-decoration'></div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Call to Action Section */}
+      {/* CTA */}
       <section className='cta-section'>
         <div className='cta-content'>
           <h2 className='cta-title'>Ready to Start Your Journey?</h2>
           <p className='cta-description'>
-            Don't see a position that fits? Send us your resume and we'll keep
-            you in mind for future opportunities.
+            Don't see a position that fits? Send us your resume.
           </p>
           <button className='cta-button secondary'>Send Resume</button>
         </div>
-        <div className='cta-animation'>
-          <div className='animated-shape shape-1'></div>
-          <div className='animated-shape shape-2'></div>
-          <div className='animated-shape shape-3'></div>
-        </div>
       </section>
+
     </div>
   );
 };

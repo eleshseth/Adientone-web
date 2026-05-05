@@ -8,24 +8,28 @@ import ServiceSection from '../../components/ServiceSection/ServiceSection'
 import Engagements from '../../components/Engagements/Engagements'
 import Excellence from '../../components/Excellence/Excellence'
 const manufacturingRoles = [
-  'Industrial Engineer',
-  'Bio/Chemical',
-  'Civil/Structural',
-  'Aerospace/Automotive',
+  'HVAC Mechanic II',
+  'Manufacturing Maintenance engineer',
+  'Painter II',
+  'Painter',
+  'Meter Reader',
+  'Operator',
+  'Utility Worker',
+  'Operator I',
+  'Operator',
+  'Operator-In-Training',
+  'Utility Worker II',
+  'Electrician',
+  'Maintenance Mechanic',
   'Maintenance Technician',
-  'Supply Chain Specialist',
-  'Mechanical Engineer',
-  'Manufacturing Technician',
-  'Environmental Advisor',
-  'Market Research Analyst',
-  'Assembly Line Workers',
-  'Machine Operator',
-  'Quality Control Inspector',
-  'Production Supervisors',
-  'Health And Safety Specialist',
-  'Industrial Designer',
-  'Automation Engineer',
+  'Manufacturing Technician / Machinist',
+  'Utility Worker',
+  'Facilities Coordinator',
+  'Pricing Analyst',
+  'Supply Chain Analyst',
+  'Logistics Coordinator',
 ];
+
 const Manufacturing = () => {
   return (
     <div>

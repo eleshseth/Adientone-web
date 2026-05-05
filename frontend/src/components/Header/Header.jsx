@@ -105,14 +105,14 @@ const Header = () => {
           <Link to='/contact' onClick={handleNavClick}>
             Contact
           </Link>
-          <div className='dropdown-content'>
+          {/* <div className='dropdown-content'>
             <a href='#email' onClick={handleNavClick}>
               Email
             </a>
             <a href='#location' onClick={handleNavClick}>
               Location
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='button'>

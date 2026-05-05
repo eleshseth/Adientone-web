@@ -9,28 +9,28 @@ import ServiceSection from '../../components/ServiceSection/ServiceSection.jsx';
 import Excellence from '../../components/Excellence/Excellence.jsx';
 import Hosp from '../../components/Hosp/Hosp.jsx';
 
-const hospitalityRoles = [
-  'Front Office Manager',
-  'Guest Relations Executive',
-  'Housekeeping Supervisor',
-  'Food and Beverage Manager',
-  'Executive Chef',
-  'Sous Chef',
-  'Restaurant Manager',
-  'Banquet Coordinator',
-  'Event Planner',
-  'Concierge',
-  'Hospitality Trainer',
-  'Revenue Manager',
-  'Hotel Operations Manager',
-  'Travel and Tourism Consultant',
-  'Catering Manager',
-  'Reservation Agent',
-  'Customer Service Representative',
-  'Spa and Wellness Manager',
-  'Sales and Marketing Executive',
-  'General Manager',
-];
+// const hospitalityRoles = [
+//   'Front Office Manager',
+//   'Guest Relations Executive',
+//   'Housekeeping Supervisor',
+//   'Food and Beverage Manager',
+//   'Executive Chef',
+//   'Sous Chef',
+//   'Restaurant Manager',
+//   'Banquet Coordinator',
+//   'Event Planner',
+//   'Concierge',
+//   'Hospitality Trainer',
+//   'Revenue Manager',
+//   'Hotel Operations Manager',
+//   'Travel and Tourism Consultant',
+//   'Catering Manager',
+//   'Reservation Agent',
+//   'Customer Service Representative',
+//   'Spa and Wellness Manager',
+//   'Sales and Marketing Executive',
+//   'General Manager',
+// ];
 
 
 const Hospitality = () => (

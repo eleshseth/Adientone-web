@@ -10,26 +10,21 @@ import ServiceSection from '../../components/ServiceSection/ServiceSection.jsx';
 import Excellence from '../../components/Excellence/Excellence.jsx';
 
 const ecommerceRoles = [
-  'Financial Reporting Specialist',
+  
   'Omnichannel Manager',
   'E–Commerce Sales Associate',
-  'Customer Service Rep',
   'Product Manager',
   'Marketing Specialist',
-  'Pricing Analyst',
   'Inventory Control Specialist',
-  'Supply Chain Analyst',
   'Fulfillment Manager',
   'E–Commerce Developer',
   'E–Commerce IT Management',
-  'Logistics Coordinator',
   'CRM Specialist',
   'Data & Analytics Specialist',
   'Graphic Designer',
-  'Merchandising Specialist',
-  'Logistics Coordinator',
-  'Retail Strategist',
-  'Legal & Compliance Specialist',
+  'Software Engineer',
+  'Data Scientist',
+  'Quality Control'
 ];
 
 const Technology = () => (

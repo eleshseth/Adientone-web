@@ -138,6 +138,7 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <Specific />
       <Experience />
       <section className='icon-row-section'>
         <h2 className='services-heading'>Services</h2>
@@ -209,7 +210,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Specific />
 
       {/* <section className='how-different-section'>
         <h2 className='how-different-heading'>How We Are Different</h2>

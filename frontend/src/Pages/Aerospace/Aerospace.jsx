@@ -12,15 +12,12 @@ import Excellence from '../../components/Excellence/Excellence.jsx';
 const aerospacePoints = [
   'Aerospace Engineer',
   'Mechanical Engineer',
-  'Software Engineer',
   'Manufacturing Technician',
   'Environmental Advisor',
   'Market Research Analyst',
   'Learning & Development Manager',
   'Supply Chain Manager',
-  'Data Scientist',
   'Test Engineer',
-  'Quality Control',
   'Safety Engineer',
   'Occupational Health Advisor',
   'Production Engineer',
@@ -28,7 +25,15 @@ const aerospacePoints = [
   'Logistician',
   'Research Analyst',
   'Legal Counsel',
-  'Compliance Officer',
+  'Compliance Office',
+  'Aircraft Engineer',
+  'Aircraft Systems Engineer',
+  'Avionics Systems Engineer',
+  'Modelling Engineer',
+  'Design Engineer',
+  'Structural Design Engineer',
+  'Mechanical Design Engineer',
+  'Simulation Engineer',
 ];
 
 const Aerospace = () => (

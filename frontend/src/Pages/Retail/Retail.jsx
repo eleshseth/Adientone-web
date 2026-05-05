@@ -9,9 +9,9 @@ import ServiceSection from '../../components/ServiceSection/ServiceSection.jsx';
 import Excellence from '../../components/Excellence/Excellence.jsx';
 
  const ecommercePoints = [
-   'Financial Reporting Specialist',
+   'Customer Service Rep',
    'Omnichannel Manager',
-   'E-Commerce Sales Associate',
+   'E-commerce Sales Associate',
    'Customer Service Rep',
    'Product Manager',
    'Marketing Specialist',
@@ -19,8 +19,8 @@ import Excellence from '../../components/Excellence/Excellence.jsx';
    'Inventory Control Specialist',
    'Supply Chain Analyst',
    'Fulfillment Manager',
-   'E-Commerce Developer',
-   'E-Commerce IT Management',
+   'E-commerce Developer',
+   'E-commerce IT Management',
    'Logistics Coordinator',
    'CRM Specialist',
    'Data & Analytics Specialist',

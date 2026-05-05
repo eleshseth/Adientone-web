@@ -13,7 +13,7 @@ const RPO = () => {
     <div>
       <Image src={assets.rpos} title='RPO Solutions at AdientOne' />
       <Paragraph
-        title={'Payroll Solutions'}
+        title={'Rpo Solutions'}
         description={[
           'AdientOne’s Recruitment Process Outsourcing (RPO) solutions are designed to streamline your hiring process and deliver top talent efficiently.',
           'Our RPO services provide end-to-end recruitment support, from sourcing and screening to onboarding, tailored to your business needs.',
@@ -21,23 +21,24 @@ const RPO = () => {
           'Partner with AdientOne to reduce time-to-fill, improve quality of hire, and gain a strategic advantage in talent acquisition.',
         ]}
       />
-      
+
       <Experience />
+      <div className='video-section'>
+        <video className='background-video' autoPlay loop muted>
+          <source src={assets.cloud} type='video/mp4' />
+          Your browser does not support the video tag.
+        </video>
+        <div className='video-content'>
+          <h2>Transform Your Workforce</h2>
+          <p>Partner with us for innovative staffing solutions</p>
+          {/* <button className='video-cta'>Learn More</button> */}
+        </div>
+      </div>
       <Excellence />
       <Engagements />
       <ServiceSection />
       <HowDifferent />
-          <div className='video-section'>
-            <video className='background-video' autoPlay loop muted>
-              <source src={assets.cloud} type='video/mp4' />
-              Your browser does not support the video tag.
-            </video>
-            <div className='video-content'>
-              <h2>Transform Your Workforce</h2>
-              <p>Partner with us for innovative staffing solutions</p>
-              {/* <button className='video-cta'>Learn More</button> */}
-            </div>
-          </div>
+     
     </div>
   );
 };

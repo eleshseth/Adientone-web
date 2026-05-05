@@ -25,10 +25,6 @@ const Permanent = () => {
         ]}
       />
       <Experience />
-      <Excellence />
-      <Engagements />
-      <ServiceSection />
-      <HowDifferent />
       <div className='video-section'>
         <video className='background-video' autoPlay loop muted>
           <source src={assets.cloud} type='video/mp4' />
@@ -40,6 +36,11 @@ const Permanent = () => {
           {/* <button className='video-cta'>Learn More</button> */}
         </div>
       </div>
+      <Excellence />
+      <Engagements />
+      <ServiceSection />
+      <HowDifferent />
+      
     </div>
   );
 }

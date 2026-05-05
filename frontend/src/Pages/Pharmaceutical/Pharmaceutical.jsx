@@ -9,11 +9,9 @@ import ServiceSection from '../../components/ServiceSection/ServiceSection.jsx';
 import Excellence from '../../components/Excellence/Excellence.jsx';
 
 const pharmaPoints = [
-  'HR/Legal Advisor',
-  'Accountant/Finance Specialist',
   'Administrative/Clerical',
   'Medical Marketing Specialist',
-  'Supply Chain, Procurement, And Logistics',
+  'Supply Chain, Procurement, and Logistics',
   'Research Scientist',
   'Patent Attorney',
   'Regulatory Affairs Specialist',
@@ -29,7 +27,18 @@ const pharmaPoints = [
   'Regulatory Affairs Specialist',
   'Information Technologist',
   'Clinical Data Analyst',
+  'Registered Nurse',
+  'Patient Access Representative',
+  'Medical Interpreter',
+  'RN: Case Manager',
+  'Pharmacist',
+  'Pharmacy Tech',
+  'Data Analyst: IV',
+  'LPN',
+  'Physical Therapist',
+  'Compounding Technician',
 ];
+
 
 const Pharmaceutical = () => (
   <div className='pharmaceutical-container'>
